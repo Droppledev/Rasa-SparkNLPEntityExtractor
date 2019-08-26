@@ -17,9 +17,6 @@ import json
 from sparknlpmodule import SparkNLPModule
 
 MODEL_DIR = "sparknlp_ner_extractor"
-"""
-export PYTHONPATH=/Users/ayas/Documents/KP/Chatbot/CustomComponents/name_bot/components/:$PYTHONPATH
-"""
 
 
 class SparkNLPEntityExtractor(EntityExtractor):
