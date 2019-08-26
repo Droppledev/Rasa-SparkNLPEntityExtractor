@@ -1,0 +1,11 @@
+components/wiki.id.vec
+components/train_data.train
+components/training_data.json
+ngrok
+rasa_core.log
+rasa.db
+tracker.db
+__pycache__
+components/__pycache__
+models/*
+.DS_Store

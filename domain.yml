@@ -1,0 +1,134 @@
+intents:
+- affirm
+- ask_weather
+- calculate
+- curious_intent
+- deny
+- experiment
+- get_theme
+- goodbye
+- greet
+- inform_name
+- mood_great
+- mood_unhappy
+- query
+- start_calc
+- start_experiment
+- stop_query
+- ask_my_name
+- sto_query
+entities:
+- listed
+- location
+- number
+- operator
+- person
+- pronoun
+- role
+- name
+- weather_location
+slots:
+  choice:
+    type: unfeaturized
+    auto_fill: false
+  data_loc:
+    type: list
+  data_role:
+    type: list
+  intents:
+    type: list
+  listed:
+    type: list
+  location:
+    type: unfeaturized
+    auto_fill: false
+  operator:
+    type: text
+  person:
+    type: text
+  pronoun:
+    type: unfeaturized
+  requested_slot:
+    type: unfeaturized
+  role:
+    type: unfeaturized
+    auto_fill: false
+  theme:
+    type: list
+  topic:
+    type: list
+  weather_location:
+    type: unfeaturized
+    auto_fill: false
+templates:
+  utter_greet:
+  - text: Hey! My name is HelloBot, what is your name?
+  utter_ask_mood:
+  - text: What is your current mood ?
+  utter_cheer_up:
+  - text: 'Here is something to cheer you up:'
+    image: https://i.imgur.com/nGF1K8f.jpg
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_greet_name:
+  - text: It's nice to meet you, {person}.
+  - text: Nice to meet you, {person}.
+  utter_experiment:
+  - text: Okay! Here is {listed}
+  utter_start:
+  - text: Let's start!
+  utter_result:
+  - text: The result is {listed}
+  utter_theme:
+  - text: The theme is {theme}
+  utter_ok:
+  - text: Ok!
+  utter_ask_role:
+  - text: No person found :(
+  utter_ask_location:
+  - text: No location found :(
+  utter_ask_choice:
+  - text: Please choose from the previous options!
+  utter_ask_name:
+  - text: I don't know your name, What's your name?
+  utter_ask_weather_location:
+  - text: Where is your location ?
+  utter_no_weather_location:
+  - text: Location not found !
+  utter_confirm_weather_location:
+  - text: Your last search is {weather_location}, get weather for last location?
+  utter_default:
+  - text: Sorry, I don't understand
+actions:
+- action_calculate
+- action_get_intents
+- action_get_name
+- action_greet_name
+- action_query
+- action_set_intents
+- confirm_name
+- query_form
+- reset_form
+- weather_form
+- utter_ask_location
+- utter_ask_mood
+- utter_ask_role
+- utter_ask_choice
+- utter_cheer_up
+- utter_did_that_help
+- utter_experiment
+- utter_goodbye
+- utter_greet
+- utter_greet_name
+- utter_happy
+- utter_ok
+- utter_result
+- utter_start
+- utter_theme
+- utter_ask_name
+- utter_ask_weather_location
+- utter_confirm_weather_location
