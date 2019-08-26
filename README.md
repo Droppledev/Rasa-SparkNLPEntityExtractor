@@ -9,8 +9,7 @@ you need Python 3.6 or below and just install RASA with pip
 ### Installation
 1. Install Java JDK 8
 2. Install pyspark and sparknlp with pip
-`pip install pyspark
-pip install sparknlp`
+`pip install pyspark` and `pip install sparknlp`
 
 ## How to Use It
 1. Clone this repo
