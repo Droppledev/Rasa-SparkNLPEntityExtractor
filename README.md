@@ -24,4 +24,8 @@ you need Python 3.6 or below and just install RASA with pip
 1. Still doesn't work, because `convert_to_rasa` function in `sparknlpmodule.py` has not completed yet
 2. Why has not completed yet? I think it's because lack of training dataset in NLU.md so it still give low prediction and just output 'O' or no entity detected
 
+## Some links
+https://rasa.com/docs/rasa/nlu/components/
+https://rasa.com/docs/rasa/nlu/choosing-a-pipeline/
+https://blog.rasa.com/enhancing-rasa-nlu-with-custom-components/
 
